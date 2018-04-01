@@ -1,0 +1,52 @@
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+a {
+  color: seashell;
+  text-decoration: underline;
+}
+
+/* Header section*/
+header {
+  /*Set header as flex container, and center-justify flex items along cross axis*/
+  display: flex;
+  align-items: center;
+  /*Fix the header, bring to front, extend to full width & set height, background colour and border*/
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  background-color: black;
+}
+
+/*Set logo box as flex container, center-justify flex items along cross axis and set LHS padding*/
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+/*Set height of logo and RHS margin*/
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+/*Set nav menu RHS padding*/
+header nav {
+  padding-right: 20px;
+}
+
+/*Set padding for nav menu items, and display inline-block*/
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
