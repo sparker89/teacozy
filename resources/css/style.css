@@ -12,6 +12,22 @@ a {
   text-decoration: underline;
 }
 
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
 /* Header section*/
 header {
   /*Set header as flex container, and center-justify flex items along cross axis*/
@@ -73,11 +89,12 @@ nav span {
 .titlebox {
   display: block;
   width: 300px;
-  padding: 10px;
+  padding: 5px;
 }
 
 .titlebox span {
   padding: 5px;
+  font-weight: bold;
 }
 
 .titlebox img {
@@ -87,11 +104,45 @@ nav span {
 }
 
 /*Feature section*/
+.features {
+  width: 1000px;
+  height: 700px;
+  /*Centralise box*/
+  margin: auto;
+  padding-top: 70px;
+}
+
 .featurebox {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 1000px;
+  align-content: flex-start;
+}
+
+/*Locations section*/
+.background-box {
+  background-image: url("../images/img-locations-background.jpg");
+    height: 500px;
+    width: 1200px;
+    padding-top: 70px;
+    margin: 0 auto;
+}
+
+.flexbox-locations {
+  display: flex;
+  justify-content: center;
+  width: 1100px;
   /*Centralise flex container*/
   margin: 0 auto;
+}
+
+.location {
+  opacity: 1;
+  background-color: black;
+  flex-basis: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  margin: 5px 20px;
 }
