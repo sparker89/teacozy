@@ -6,6 +6,8 @@ body {
   background-color: black;
   opacity: 0.9;
   text-align: center;
+  /*Body has a default margin - set to 0 to avoid gap at the top of the header*/
+  margin: 0px;
 }
 
 h2, h3, h4 {
@@ -19,6 +21,7 @@ a {
 }
 
 /* Header section*/
+
 header {
   /*Set header as flex container, and center-justify flex items along cross axis*/
   display: flex;
@@ -58,24 +61,32 @@ nav span {
 }
 
 /*Mission section*/
+
+/*Background image with centre-justified text strip*/
 .photobox {
+  /*Set photobox as flex container, column direction, and center-justify flex items along cross axis*/
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /*Set height and width of photobox*/
   height: 700px;
   width: 1200px;
   text-align: center;
+  /*Set background image*/
   background-image: url("../images/img-mission-background.jpg");
   /*Centralise flex container*/
   margin: 0 auto;
 }
 
+/*Black background stripe*/
 .stripe {
   background-color: black;
   width: 100%
 }
 
 /*Features section*/
+
+/*Titlebox - image and title*/
 .titlebox {
   display: block;
   padding: 5px;
@@ -92,13 +103,16 @@ nav span {
   display: block;
 }
 
+/*Featurebox - flex container with titlebox flex items*/
 .featurebox {
+  /*Set featurebox as flex container, center-justify flex items along cross axis, wrap content and align to start*/
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-content: flex-start;
 }
 
+/*Features - containing section for featurebox flex container*/
 .features {
   width: 1000px;
   height: 700px;
@@ -108,15 +122,18 @@ nav span {
 }
 
 /*Locations section*/
+
+/*Box with a background image*/
 .background-box {
   background-image: url("../images/img-locations-background.jpg");
-    height: 500px;
-    width: 1200px;
-    padding-top: 70px;
-    margin: 0 auto;
+  height: 500px;
+  width: 1200px;
+  padding-top: 70px;
+  margin: 0 auto;
 }
 
 .flexbox-locations {
+  /*Set flexbox-locations as flex container, and center-justify flex items along cross axis*/
   display: flex;
   justify-content: center;
   width: 1100px;
@@ -125,12 +142,14 @@ nav span {
 }
 
 .location {
-  opacity: 1;
-  background-color: black;
-  flex-basis: 300px;
+  /*Set location as flex container, column direction, and center-justify flex items along cross axis*/
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /*Set initial size of element*/
+  flex-basis: 300px;
+  opacity: 1;
+  background-color: black;
   padding: 10px;
   margin: 5px 20px;
 }
